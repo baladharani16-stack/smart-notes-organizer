@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #f8fafc;
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
+  }
+
+  .dark {
+    --color-bg: #0b0f19;
+    --color-surface: #131b2e;
+    --color-border: #1e293b;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: #1e293b;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  .dark body {
+    color: #f1f5f9;
+  }
+}
+
+/* Custom delicate scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-panel {
+  background: rgba(19, 27, 46, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Note card color tints */
+.note-tint-default {
+  border-top-color: #6366f1;
+}
+.note-tint-amber {
+  border-top-color: #f59e0b;
+}
+.note-tint-blue {
+  border-top-color: #0284c7;
+}
+.note-tint-emerald {
+  border-top-color: #10b981;
+}
+.note-tint-purple {
+  border-top-color: #a855f7;
+}
+.note-tint-rose {
+  border-top-color: #f43f5e;
+}
