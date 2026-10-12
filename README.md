@@ -166,7 +166,7 @@ PORT=5000
 NODE_ENV=development
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.yourdomain.mongodb.net/studyspace?retryWrites=true&w=majority
 JWT_SECRET=super_secret_jwt_key_at_least_32_characters_long
-CLIENT_URL=http://localhost:5173
+CLIENT_URL=http://localhost:3000
 ```
 
 ### 5. Run the Application in Development Mode
@@ -174,7 +174,7 @@ You can run both the Express backend and the Vite frontend simultaneously with o
 ```bash
 npm run dev
 ```
-* **Frontend**: [http://localhost:5173](http://localhost:5173)
+* **Frontend**: [http://localhost:3000](http://localhost:3000)
 * **Backend API**: [http://localhost:5000](http://localhost:5000)
 * **Health Check**: [http://localhost:5000/api/health](http://localhost:5000/api/health)
 
